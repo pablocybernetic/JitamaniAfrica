@@ -19,12 +19,18 @@ class EmailController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'message' => 'required',
+            'phonenumber' => 'required',
+            'subject' => 'required',
+
         ]);
 $email=$request->email;
         $details = [
             'name' => $request->name,
             'email' => $request->email,
             'message' => $request->message,
+            'phonenumber' => $request->phonenumber,
+            'subject' => $request->subject,
+
         ];
 
         Mail::to($email)->send(new ContactMail($details));
