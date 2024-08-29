@@ -122,10 +122,10 @@
                                  <input type="text" class="mail_text" placeholder="Email" id="email" name="email">
                               </div>
                               <div class="col-md-6">
-                                 <input type="text" class="mail_text" placeholder="Phone Number" id="phonenumber" name="phonenumber">
+                                 <!-- <input type="text" class="mail_text" placeholder="Phone Number" id="phonenumber" name="phonenumber"> -->
                               </div>
                               <div class="col-md-6">
-                                 <input type="text" class="mail_text" placeholder="Subject" id="subject" name="subject">
+                                 <!-- <input type="text" class="mail_text" placeholder="Subject" id="subject" name="subject"> -->
                               </div>
                            </div>
                            <textarea class="massage-bt" placeholder="Message" rows="5" id="message" name="message"></textarea>
