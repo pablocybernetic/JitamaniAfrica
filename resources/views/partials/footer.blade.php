@@ -1,6 +1,9 @@
 <!-- resources/views/partials/footer.blade.php -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+   <a href="https://api.whatsapp.com/send?phone=254743945539&text=Hello%21%20I%20am%20interested%20in%20your%20services."
+      class="float" target="_blank">
+      <i class="fa fa-whatsapp my-float"></i>
+   </a>
 <div class="footer_section layout_padding">
     <div class="container">
         <div class="row">

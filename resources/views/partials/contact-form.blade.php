@@ -30,7 +30,7 @@
                      </div>
                      <textarea class="massage-bt" placeholder="Message" rows="5" id="message" name="message"></textarea>
                      <div class="btn_main">
-                        <button type="submit">Send Email</button>
+                        <button type="submit" class="btn btn-primary" >Send Email</button>
                      </div>
                   </form>
                </div>
