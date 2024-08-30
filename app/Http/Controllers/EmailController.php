@@ -32,8 +32,9 @@ $email=$request->email;
             'subject' => $request->subject,
 
         ];
+        $receiver ='jitamaniafrica@gmail.com';
 
-        Mail::to($email)->send(new ContactMail($details));
+        Mail::to($receiver)->send(new ContactMail($details));
 
         return redirect()->back()->with('status', 'Email sent successfully!');
     }
