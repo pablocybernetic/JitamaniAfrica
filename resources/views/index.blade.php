@@ -70,6 +70,7 @@
             </div>
          </div>
       </div>
+
 <script>
     const texts = document.querySelectorAll('.text');
     const container = document.getElementById('text-container');
@@ -471,124 +472,8 @@ Who Are We?                </h4> -->
          </div>
       </div>
    </div>
+   @include('partials.contact-form')
 
-   <!-- contact section start -->
-   <div class="contact_section layout_padding">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12">
-               <h1 class="contact_taial" style="color: #ebe5e5;"> Keen to Collaborate? Let's Set Up a Call</h1>
-            </div>
-         </div>
-         <div class="contact_section_2">
-            <div class="row">
-               <div class="col-md-8">
-                  <div class="mail_section map_form_container">
-
-                     <style>
-                        .mail_text {
-                           width: 100%;
-                           padding: 10px;
-                           margin: 5px 0;
-                        }
-
-                        .massage-bt {
-                           width: 100%;
-                           padding: 10px;
-                           margin: 5px 0;
-                        }
-
-                        .btn_main {
-                           margin-top: 10px;
-                        }
-
-                        .send_bt a {
-                           display: block;
-                           padding: 10px 20px;
-                           background-color: #02a763;
-                           color: #fff;
-                           text-align: center;
-                           text-decoration: none;
-                        }
-                     </style>
-
-                     <form id="contactForm">
-                        <div class="row">
-                           <div class="col-md-6">
-                              <input type="text" class="mail_text" placeholder="Your Name" name="name" required>
-                           </div>
-                           <div class="col-md-6">
-                              <input type="email" class="mail_text" placeholder="Email" name="email" required>
-                           </div>
-                           <div class="col-md-6">
-                              <input type="text" class="mail_text" placeholder="Phone Number" name="phone" required>
-                           </div>
-                           <div class="col-md-6">
-                              <input type="text" class="mail_text" placeholder="Subject" name="subject" required>
-                           </div>
-                        </div>
-                        <textarea class="massage-bt" placeholder="Message" rows="5" id="comment" name="message"
-                           required></textarea>
-                        <div class="btn_main">
-                           <div class="send_bt active"><a href="#" id="sendButton">Send</a></div>
-                        </div>
-                     </form>
-
-                     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                     <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                           <div class="modal-content">
-                              <div class="modal-header">
-                                 <h5 class="modal-title" id="messageModalLabel">Message Status</h5>
-                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                 </button>
-                              </div>
-                              <div class="modal-body" id="messageModalBody">
-                                 <!-- Message will be inserted here by JavaScript -->
-                              </div>
-                              <div class="modal-footer">
-                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
-                     <script>
-                        $(document).ready(function () {
-                           $('#sendButton').click(function (event) {
-                              event.preventDefault();
-
-                              $.ajax({
-                                 type: 'POST',
-                                 url: $('#contactForm').attr('action'),
-                                 data: $('#contactForm').serialize(),
-                                 success: function (response) {
-                                    $('#messageModalLabel').text('Success');
-                                    $('#messageModalBody').text('Message sent successfully!');
-                                    $('#contactForm')[0].reset();
-                                    $('#messageModal').modal('show');
-                                 },
-                                 error: function () {
-                                    $('#messageModalLabel').text('Error');
-                                    $('#messageModalBody').text('There was an error sending the message.');
-                                    $('#messageModal').modal('show');
-                                 }
-                              });
-                           });
-                        });
-                     </script>
-
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="contact_img"><img src="images/consult.png"></div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
    <div class="services_section layout_padding" style="background-color: #fff;">
       <div class="container">
          <div class="row">
