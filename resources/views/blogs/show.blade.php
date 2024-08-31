@@ -331,7 +331,7 @@
                                 <div class="col-lg-12">
                                     <div class="single_post">
                                         <p class="m-b-0">{{ $blog->excerpt }}</p>
-                                         <span>{{ \Carbon\Carbon::parse($blog->created_at)->format('M-d-Y H:i') }}</span>
+                                         <span class=" text-info">{{ \Carbon\Carbon::parse($blog->created_at)->format('M-d-Y H:i') }}</span>
                                         <div class="img-post">
                                             <img src="{{ asset($blog->featured_image) }}" alt="Awesome Image">                                            
                                         </div>
