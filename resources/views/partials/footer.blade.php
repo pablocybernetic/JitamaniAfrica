@@ -16,6 +16,17 @@
                         <li><a href="services.html">Services</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li>@guest
+        <a href="{{ route('login') }}">Login</a>
+    @endguest</li>
+      @auth
+
+
+        <!-- <li>        <a href="{{ route('dashboard') }}" class="btn btn-success">Go to Dashboard</a> -->
+        </li>
+        <li>    <a href="{{ route('blogs.create') }}">Create New Blog</a>
+        </li>
+    @endauth
                     </ul>
                 </div>
             </div>
