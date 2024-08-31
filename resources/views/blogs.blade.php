@@ -106,8 +106,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-7 text-center">
                         <div class="section-title">
-                            <h2>Latest News</h2>
-                            <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites</p>
+                            <h2>Blog Posts</h2>
+                            <p>We specialize in providing customized consultancy services across the dynamic sectors of Food, Fashion, Fitness, and Music.</p>
                         </div>
                     </div>
                 </div>
