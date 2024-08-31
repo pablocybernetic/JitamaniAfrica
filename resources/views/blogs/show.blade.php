@@ -310,7 +310,7 @@
                         <div class="body widget">
                             <ul class="list-unstyled categories-clouds m-b-0">
                                 <li><a href="{{ route('blogs.index') }}">All Blogs</a></li>
-                                <li>    <a href="{{ route('blogs.edit',  $blog->slug) }}">Edit</a>
+                                {{-- <li>    <a href="{{ route('blogs.edit',  $blog->slug) }}">Edit</a> --}}
                                 </li>
                                 <form action="{{ route('blogs.destroy', $blog->slug) }}" method="POST" style="display:inline;">
         @csrf
