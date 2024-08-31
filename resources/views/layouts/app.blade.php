@@ -231,7 +231,7 @@ canvas {
     </li>
 
     <li class="nav-item">
-        <a class="nav-link text-light" href="{{ url('/blog') }}">Blog</a>
+        <a class="nav-link text-light" href="{{ url('/blogs') }}">Blog</a>
     </li>
     <li class="nav-item">
         <a class="nav-link text-light" href="{{ url('/contact') }}">Contact Us</a>
