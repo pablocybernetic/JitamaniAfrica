@@ -19,7 +19,7 @@
         }
 
         /* Blog
-    ---------------------*/
+        ---------------------*/
         .blog-grid {
             margin-top: 15px;
             margin-bottom: 15px;
@@ -33,8 +33,8 @@
 
         .blog-grid .blog-img .date {
             position: absolute;
-            background: rgba(87, 236, 204, 0.377);
-            color:    rgb(2, 92, 72);
+            background: rgba(143, 233, 213, 0.808);
+            color: rgb(2, 92, 72);
             ;
             padding: 8px 15px;
             left: 0;
@@ -131,10 +131,10 @@
                 @foreach ($blogs as $blog)
                     <li>
                         <!-- <form action="{{ route('blogs.destroy', $blog->slug) }}" method="POST" style="display:inline;">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit">Delete</button>
-                    </form> -->
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit">Delete</button>
+                        </form> -->
                     </li>
                     <div class="col-lg-4">
                         <div class="blog-grid">
@@ -142,14 +142,18 @@
                                 <div class="date">
                                     <small>{{ \Carbon\Carbon::parse($blog->created_at)->format('d-M-Y') }}</small>
                                 </div>
-                                
+
                                 <a href="{{ route('blogs.show', $blog->slug) }}">
                                     <img src="{{ asset($blog->featured_image) }}" alt="Featured Image">
                                 </a>
                             </div>
                             <div class="blog-info">
-                                <h5><a href="{{ route('blogs.show', $blog->slug) }}">{{ $blog->title }}</a></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                <h5>
+                                    <a href="{{ route('blogs.show', $blog->slug) }}">
+                                        {{ Str::words($blog->title, 7, '...') }}
+                                    </a>
+                                </h5>
+                                <p>{{ \Illuminate\Support\Str::words($blog->content, 10, '...') }}</p>
                                 <div class="row">
                                     <div class="btn-bar">
                                         <a href="{{ route('blogs.show', $blog->slug) }}" class="px-btn-arrow">

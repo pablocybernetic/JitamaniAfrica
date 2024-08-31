@@ -18,3 +18,5 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+# Ignore the featured_images directory
+/storage/app/public/featured_images/
