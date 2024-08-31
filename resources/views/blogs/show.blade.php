@@ -284,8 +284,8 @@
                     <div class="card single_post">
                         <div class="body">
                             <div class="img-post">
-                                <img class="d-block img-fluid" src="https://www.bootdey.com/image/800x280/87CEFA/000000"
-                                    alt="First slide">
+                                <img src="{{ asset($blog->featured_image) }}" alt="Featured Image">
+
                             </div>
                             <h3><a href="blog-details.html">{{ $blog->title }}</a></h3>
                             <p>{{ $blog->content }}</p>

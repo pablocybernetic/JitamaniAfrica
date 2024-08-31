@@ -91,16 +91,16 @@ opacity-8, .overlay-opacity-8:after {
                             <i class="fi fi-pencil"></i> 
                             <span class="d-inline-block px-2">Blog Post Form</span>
                         </h2>
-                        <form action="{{ route('blogs.store') }}" method="POST" novalidate class="bs-validate">
-                            @csrf
+                        <form action="{{ route('blogs.store') }}" method="POST" novalidate class="bs-validate" enctype="multipart/form-data">
+                        @csrf
                             <div class="form-floating mb-3">
                                 <input type="text" name="title" id="title" class="form-control" placeholder="Title" required>
                                 <label for="title">Title</label>
                             </div>
-                            <div class="form-floating mb-3">
+                            <!-- <div class="form-floating mb-3">
                                 <input type="text" name="slug" id="slug" class="form-control" placeholder="Slug" required>
                                 <label for="slug">Slug</label>
-                            </div>
+                            </div> -->
                             <div class="form-floating mb-3">
                                 <textarea name="content" id="content" class="form-control" placeholder="Content" required style="height: 100px;"></textarea>
                                 <label for="content">Content</label>
@@ -110,9 +110,9 @@ opacity-8, .overlay-opacity-8:after {
                                 <label for="excerpt">Excerpt</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" name="featured_image" id="featured_image" class="form-control" placeholder="Featured Image URL">
-                                <label for="featured_image">Featured Image URL</label>
-                            </div>
+        <input type="file" name="featured_image" id="featured_image" class="form-control" placeholder="Upload Featured Image">
+        <label for="featured_image">Upload Featured Image</label>
+    </div>
                             <div class="form-floating mb-3">
                                 <input type="text" name="tags" id="tags" class="form-control" placeholder="Tags">
                                 <label for="tags">Tags</label>
