@@ -19,4 +19,4 @@ yarn-error.log
 /.idea
 /.vscode
 # Ignore the featured_images directory
-/storage/app/public/featured_images/
+/public/images/featured_images/
