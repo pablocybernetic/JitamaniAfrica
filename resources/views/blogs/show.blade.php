@@ -292,7 +292,7 @@
                         </div>
                     </div>
                
-                    <
+                    
                 </div>
                 <div class="col-lg-4 col-md-12 right-box">
                     <div class="card">
@@ -318,6 +318,26 @@
         <button type="submit">Delete</button>
     </form>
                             </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="header">
+                            <h2> Greetings</h2>                        
+                        </div>
+                        <div class="body widget popular-post">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="single_post">
+                                        <p class="m-b-0">{{ $blog->excerpt }}</p>
+                                         <span>{{ \Carbon\Carbon::parse($blog->created_at)->format('M-d-Y H:i') }}</span>
+                                        <div class="img-post">
+                                            <img src="{{ asset($blog->featured_image) }}" alt="Awesome Image">                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
