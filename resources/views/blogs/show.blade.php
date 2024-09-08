@@ -312,11 +312,12 @@
                                 <li><a href="{{ route('blogs.index') }}">All Blogs</a></li>
                                 {{-- <li>    <a href="{{ route('blogs.edit',  $blog->slug) }}">Edit</a> --}}
                                 </li>
+                                @auth
                                 <form action="{{ route('blogs.destroy', $blog->slug) }}" method="POST" style="display:inline;">
         @csrf
         @method('DELETE')
         <button type="submit">Delete</button>
-    </form>
+    </form>@endauth
                             </ul>
                         </div>
                     </div>
