@@ -288,7 +288,7 @@
 
                             </div>
                             <h3><a href="blog-details.html">{{ $blog->title }}</a></h3>
-                            <p>{{ $blog->content }}</p>
+                            {!! $blog->content !!}
                         </div>
                     </div>
                

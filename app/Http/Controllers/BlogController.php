@@ -32,6 +32,8 @@ class BlogController extends Controller
         'content' => 'required',
         'excerpt' => 'nullable|string',
         'featured_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Validate image
+        'featured_image2' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Validate image
+        'featured_image3' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Validate image
         'tags' => 'nullable|string',
         'published_at' => 'nullable|date',
         'status' => 'required|in:draft,published',
@@ -43,6 +45,18 @@ class BlogController extends Controller
         $filename = time() . '_' . $image->getClientOriginalName();
         $imagePath = $image->move(public_path('images/featured_images'), $filename);
         $validated['featured_image'] = 'images/featured_images/' . $filename;
+    }
+    if ($request->hasFile('featured_image2')) {
+        $image = $request->file('featured_image2');
+        $filename = time() . '_' . $image->getClientOriginalName();
+        $imagePath = $image->move(public_path('images/featured_images'), $filename);
+        $validated['featured_image2'] = 'images/featured_images/' . $filename;
+    }
+    if ($request->hasFile('featured_image3')) {
+        $image = $request->file('featured_image3');
+        $filename = time() . '_' . $image->getClientOriginalName();
+        $imagePath = $image->move(public_path('images/featured_images'), $filename);
+        $validated['featured_image3'] = 'images/featured_image3/' . $filename;
     }
     
     // Create a new blog post

@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::table('blogs', function (Blueprint $table) {
             $table->string('slug')->unique()->after('title'); // Adds a unique 'slug' column after the 'title' column
+            $table->string('featured_image2')->nullable();
+            $table->string('featured_image3')->nullable();
+
         });
     }
     

@@ -15,6 +15,8 @@ class Blog extends Model
         'content',
         'excerpt',
         'featured_image',
+        'featured_image2',
+        'featured_image3',
         'tags',
         'published_at',
         'status',

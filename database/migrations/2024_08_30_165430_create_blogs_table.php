@@ -14,6 +14,9 @@ class CreateBlogsTable extends Migration
             $table->text('content');
             $table->text('excerpt')->nullable();
             $table->string('featured_image')->nullable();
+            $table->string('featured_image2')->nullable();
+            $table->string('featured_image3')->nullable();
+
             $table->json('tags')->nullable();
             $table->timestamp('published_at')->nullable();
             $table->enum('status', ['draft', 'published', 'archived'])->default('draft');
