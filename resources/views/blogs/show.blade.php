@@ -350,7 +350,7 @@
                                         <p class="m-b-0"></p>
                                         <span></span>
                                         <div class="img-post">
-                                            <img src="{{ asset($blog->featured_image3) }}" alt="Awesome Image">                                        
+                                            <img src="{{ asset($blog->featured_image2) }}" alt="Awesome Image">                                        
                                         </div>                                            
                                     </div>
                                     {{-- <div class="single_post">b

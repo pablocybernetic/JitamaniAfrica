@@ -55,7 +55,7 @@ class BlogController extends Controller
     if ($request->hasFile('featured_image3')) {
         $image = $request->file('featured_image3');
         $filename = time() . '_' . $image->getClientOriginalName();
-        $imagePath = $image->move(public_path('images/featured_images'), $filename);
+        $imagePath = $image->move(public_path('images/featured_images3'), $filename);
         $validated['featured_image3'] = 'images/featured_image3/' . $filename;
     }
     
