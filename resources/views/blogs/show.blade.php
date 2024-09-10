@@ -353,6 +353,10 @@
                                             <img src="{{ asset($blog->featured_image3) }}" alt="Awesome Image">                                        
                                         </div>                                            
                                     </div>
+                                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C9pbyC-uE_A/" style=" background:#FFF; border:0; margin:0; padding:0; width:100%; max-width:540px; min-width:326px; overflow:hidden; position:relative;">
+                                        <div style="padding:16px;"> <a href="https://www.instagram.com/reel/C9pbyC-uE_A/" style=" background:#FFF; line-height:0; padding:0; text-align:left; text-decoration:none; width:100%;" target="_blank"> <div style="display: flex; flex-direction: column; align-items: center; width:100%;"><div style="display: flex; flex-direction: row; align-items: center; width:100%;"><img src="https://instagram.fdel10-1.fna.fbcdn.net/v/t51.2885-15/POST_IMAGE_URL.jpg" style="width:100%;"></div></div></a></div></blockquote>
+                                      <script async src="//www.instagram.com/embed.js"></script>
+                                      
                                     {{-- <div class="single_post">b
                                         <p class="m-b-0">new rules, more cars, more races</p>
                                         <span>jun 8, 2018</span>
