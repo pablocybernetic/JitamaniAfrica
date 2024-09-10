@@ -153,7 +153,7 @@
                                         {{ Str::words($blog->title, 7, '...') }}
                                     </a>
                                 </h5>
-                                <p>{{ \Illuminate\Support\Str::words($blog->content, 10, '...') }}</p>
+                                <p>{{ \Illuminate\Support\Str::words($blog->excerpt, 10, '...') }}</p>
                                 <div class="row">
                                     <div class="btn-bar">
                                         <a href="{{ route('blogs.show', $blog->slug) }}" class="px-btn-arrow">

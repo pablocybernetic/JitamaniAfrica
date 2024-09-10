@@ -284,7 +284,7 @@
                     <div class="card single_post">
                         <div class="body">
                             <div class="img-post">
-                                <img src="{{ asset($blog->featured_image) }}" alt="Featured Image">
+                                <img src="{{ asset($blog->featured_image2) }}" alt="Featured Image">
 
                             </div>
                             <h3><a href="blog-details.html">{{ $blog->title }}</a></h3>

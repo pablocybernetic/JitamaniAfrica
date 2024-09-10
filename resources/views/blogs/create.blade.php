@@ -136,7 +136,7 @@
                             <!-- Excerpt Field -->
                             <div class="form-floating mb-3">
                                 <textarea name="excerpt" id="excerpt" class="form-control" placeholder="Excerpt" style="height: 80px;"></textarea>
-                                <label for="excerpt">Excerpt</label>
+                                <label for="excerpt">Introduction</label>
                             </div>
                             
                             <!-- Featured Image Upload -->
