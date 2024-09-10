@@ -1,10 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
-
-
-
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <style type="text/css">
         body {
@@ -284,15 +280,15 @@
                     <div class="card single_post">
                         <div class="body">
                             <div class="img-post">
-                                <img src="{{ asset($blog->featured_image2) }}" alt="Featured Image">
+                                <img src="{{ asset($blog->featured_image) }}" alt="Featured Image">
 
                             </div>
                             <h3><a href="blog-details.html">{{ $blog->title }}</a></h3>
                             {!! $blog->content !!}
                         </div>
                     </div>
-               
-                    
+
+
                 </div>
                 <div class="col-lg-4 col-md-12 right-box">
                     <div class="card">
@@ -313,11 +309,12 @@
                                 {{-- <li>    <a href="{{ route('blogs.edit',  $blog->slug) }}">Edit</a> --}}
                                 </li>
                                 @auth
-                                <form action="{{ route('blogs.destroy', $blog->slug) }}" method="POST" style="display:inline;">
-        @csrf
-        @method('DELETE')
-        <button type="submit">Delete</button>
-    </form>@endauth
+                                    <form action="{{ route('blogs.destroy', $blog->slug) }}" method="POST"
+                                        style="display:inline;">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit">Delete</button>
+                                </form>@endauth
                             </ul>
                         </div>
                     </div>
@@ -325,33 +322,54 @@
 
                     <div class="card">
                         <div class="header">
-                            <h2> Greetings</h2>                        
+                            <h2> Greetings</h2>
                         </div>
                         <div class="body widget popular-post">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="single_post">
                                         <p class="m-b-0">{{ $blog->excerpt }}</p>
-                                         <span class=" text-info">{{ \Carbon\Carbon::parse($blog->created_at)->format('l, F j, Y g:i A') }}</span>
+                                        <span
+                                            class=" text-info">{{ \Carbon\Carbon::parse($blog->created_at)->format('l, F j, Y g:i A') }}</span>
                                         <div class="img-post">
-                                            <img src="{{ asset($blog->featured_image) }}" alt="Awesome Image">                                            
+                                            <img src="{{ asset($blog->featured_image2) }}" alt="Awesome Image">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+                    <div class="card">
+                        <div class="header">
+                            <h2>Photos</h2>                        
+                        </div>
+                        <div class="body widget popular-post">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="single_post">
+                                        <p class="m-b-0">Apple Introduces Search Ads Basic</p>
+                                        <span>jun 22, 2018</span>
+                                        <div class="img-post">
+                                            <img src="{{ asset($blog->featured_image3) }}" alt="Awesome Image">                                        
+                                        </div>                                            
+                                    </div>
+                                    {{-- <div class="single_post">
+                                        <p class="m-b-0">new rules, more cars, more races</p>
+                                        <span>jun 8, 2018</span>
+                                        <div class="img-post">
+                                            <img src="https://www.bootdey.com/image/280x280/FFB6C1/000000" alt="Awesome Image">                                            
+                                        </div>
+                                    </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-
-    </script>
-
-
-
+    <script type="text/javascript"></script>
 @endsection
