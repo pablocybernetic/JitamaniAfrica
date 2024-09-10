@@ -353,7 +353,7 @@
                                             <img src="{{ asset($blog->featured_image3) }}" alt="Awesome Image">                                        
                                         </div>                                            
                                     </div>
-                                    {{-- <div class="single_post">
+                                    {{-- <div class="single_post">b
                                         <p class="m-b-0">new rules, more cars, more races</p>
                                         <span>jun 8, 2018</span>
                                         <div class="img-post">
