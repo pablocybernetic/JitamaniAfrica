@@ -322,7 +322,7 @@
 
                     <div class="card">
                         <div class="header">
-                            <h2> Greetings</h2>
+                            <h2> Jitamani Africa</h2>
                         </div>
                         <div class="body widget popular-post">
                             <div class="row">
@@ -347,8 +347,8 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="single_post">
-                                        <p class="m-b-0">Apple Introduces Search Ads Basic</p>
-                                        <span>jun 22, 2018</span>
+                                        <p class="m-b-0"></p>
+                                        <span></span>
                                         <div class="img-post">
                                             <img src="{{ asset($blog->featured_image3) }}" alt="Awesome Image">                                        
                                         </div>                                            
