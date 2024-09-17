@@ -49,10 +49,17 @@
             </div>
             <div class="col-lg-3 col-sm-6">
                 <h1 class="useful_text">Newsletter</h1>
-                <div class="form-group">
-                    <textarea class="update_mail" placeholder="Your Email" rows="5" id="comment" name="Your Email"></textarea>
-                    <div class="subscribe_bt"><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
-                </div>
+<form action="/" method="post">
+    <div class="form-group">
+        <input type="email" class="update_mail" placeholder="Your Email" id="email" name="email" required />
+        <div class="subscribe_bt">
+            <button type="submit">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+</form>
+
                 <div class="footer_social_icon">
                     <ul>
                         <li><a href="https://www.facebook.com/seina.naimasiah/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
