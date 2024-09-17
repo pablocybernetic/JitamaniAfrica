@@ -54,7 +54,7 @@
             </div>
             <div class="col-lg-3 col-sm-6">
                 <h1 class="useful_text">Newsletter</h1>
-                <form action="/" method="post">
+                <form action="/" method="get">
                     <div class="form-group">
                         <input type="email" class="update_mail" placeholder="Your Email" id="email" name="email"
                             required />
